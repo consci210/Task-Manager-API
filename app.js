@@ -8,7 +8,6 @@ require('dotenv').config()
 
 
 // Middleware & Static files 
-app.use(express.static('./public'))
 app.use(express.json())
 
 
