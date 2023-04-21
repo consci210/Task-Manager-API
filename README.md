@@ -19,8 +19,8 @@ MONGODB_URL=<your-mongodb-url>
 ## API Endpoints
 - All API endpoints have the prefix ` /api/v1/tasks `. 
 - The following API endpoints are available:
-  - GET /: Get all tasks
-  - POST /: Create a new task
-  - GET /:id: Get a task by ID
-  - PATCH /:id: Update a task by ID
-  - DELETE /:id: Delete a task by ID
+  - `get/` : Get all tasks
+  - `post/` : Create a new task
+  - `get/:id` : Get a task by ID
+  - `patch/:id` : Update a task by ID
+  - `delete/:id` : Delete a task by ID
