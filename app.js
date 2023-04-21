@@ -1,3 +1,4 @@
+// Import modules 
 const express = require('express')
 const app = express() 
 const tasks = require('./routes/tasks')
@@ -17,7 +18,7 @@ app.use('/api/v1/tasks' , tasks )
 const port = 3000 
 
 
-// Connect to DB then start listening 
+// Function to connect DB then start server 
 const start = async() =>{
     try{
         await connectDB(process.env.MONGO_URI)
@@ -28,4 +29,5 @@ const start = async() =>{
     }
 }
 
+// Start server 
 start() 
