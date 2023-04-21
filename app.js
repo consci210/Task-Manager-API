@@ -6,20 +6,13 @@ require('dotenv').config()
 
 
 
-// Middleware
+// Middleware & Static files 
+app.use(express.static('./public'))
 app.use(express.json())
 
 
 
-
-//routes 
-app.get('/hello' ,(req,res)=>{
-
-    res.send(" Hello from Node ")
-
-})
-
-
+// Routes 
 app.use('/api/v1/tasks' , tasks )
 const port = 3000 
 
